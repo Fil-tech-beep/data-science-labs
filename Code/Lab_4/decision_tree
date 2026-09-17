@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<color_intensity &le; 3.82<br/>gini = 0.659<br/>samples = 142<br/>value = [45, 57, 40]<br/>class = class_1>, fillcolor="#e7fcef"] ;
+1 [label=<proline &le; 1002.5<br/>gini = 0.109<br/>samples = 52<br/>value = [3, 49, 0]<br/>class = class_1>, fillcolor="#45e789"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<ash &le; 3.07<br/>gini = 0.039<br/>samples = 50<br/>value = [1, 49, 0]<br/>class = class_1>, fillcolor="#3de684"] ;
+1 -> 2 ;
+3 [label=<gini = 0.0<br/>samples = 49<br/>value = [0, 49, 0]<br/>class = class_1>, fillcolor="#39e581"] ;
+2 -> 3 ;
+4 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0, 0]<br/>class = class_0>, fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label=<gini = 0.0<br/>samples = 2<br/>value = [2, 0, 0]<br/>class = class_0>, fillcolor="#e58139"] ;
+1 -> 5 ;
+6 [label=<flavanoids &le; 1.4<br/>gini = 0.577<br/>samples = 90<br/>value = [42, 8, 40]<br/>class = class_0>, fillcolor="#fefaf7"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label=<gini = 0.0<br/>samples = 40<br/>value = [0, 0, 40]<br/>class = class_2>, fillcolor="#8139e5"] ;
+6 -> 7 ;
+8 [label=<proline &le; 724.5<br/>gini = 0.269<br/>samples = 50<br/>value = [42, 8, 0]<br/>class = class_0>, fillcolor="#ea995f"] ;
+6 -> 8 ;
+9 [label=<malic_acid &le; 3.92<br/>gini = 0.198<br/>samples = 9<br/>value = [1, 8, 0]<br/>class = class_1>, fillcolor="#52e891"] ;
+8 -> 9 ;
+10 [label=<gini = 0.0<br/>samples = 8<br/>value = [0, 8, 0]<br/>class = class_1>, fillcolor="#39e581"] ;
+9 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0, 0]<br/>class = class_0>, fillcolor="#e58139"] ;
+9 -> 11 ;
+12 [label=<gini = 0.0<br/>samples = 41<br/>value = [41, 0, 0]<br/>class = class_0>, fillcolor="#e58139"] ;
+8 -> 12 ;
+}
